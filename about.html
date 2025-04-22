@@ -1,1 +1,75 @@
-  <li><a href="about.html">Modes</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Space Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animation for moving across the screen */
+    @keyframes moveAcross {
+      0% { transform: translateX(-150px); }
+      100% { transform: translateX(100vw); }
+    }
+
+    .move-foreground {
+      animation: moveAcross 15s linear infinite;
+    }
+  </style>
+</head>
+<body class="text-white font-sans leading-relaxed bg-black">
+
+  <!-- Animated Hero Section -->
+  <section class="relative h-screen bg-stars overflow-hidden flex items-center justify-center">
+    <div class="absolute top-10 left-0 move-foreground z-30">
+      <img src="https://i.ibb.co/YXMFtNm/astronaut.png" alt="Astronaut" class="w-20 sm:w-24">
+    </div>
+    <div class="absolute top-40 left-0 move-foreground z-20">
+      <img src="https://i.ibb.co/MPWWhXb/spaceship.png" alt="Spaceship" class="w-28 sm:w-32">
+    </div>
+    <h1 class="text-4xl sm:text-6xl font-bold text-center z-10 drop-shadow-lg">About Our Game</h1>
+  </section>
+
+  <!-- Game Description -->
+  <section class="bg-gray-900 py-20 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">What is the Game About?</h2>
+      <p class="text-lg text-gray-300">
+        Explore the far reaches of space, build your ship, discover alien worlds, and face cosmic threats in our immersive space adventure.
+        Every mission you embark on brings you closer to unlocking the secrets of the galaxy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Team Profiles -->
+  <section class="bg-gray-800 py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-12">Meet The Team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Team Member 1 -->
+        <div class="bg-gray-700 p-6 rounded-2xl shadow-xl">
+          <img src="https://i.ibb.co/qkxqk6W/avatar1.png" alt="Dev 1" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold">Alex Starborn</h3>
+          <p class="text-sm text-gray-300 mb-2">Lead Developer</p>
+          <p class="text-gray-400">Built the engine and crafted every star you explore.</p>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="bg-gray-700 p-6 rounded-2xl shadow-xl">
+          <img src="https://i.ibb.co/7pZ8bbY/avatar2.png" alt="Dev 2" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold">Luna Nova</h3>
+          <p class="text-sm text-gray-300 mb-2">Creative Director</p>
+          <p class="text-gray-400">Writes the lore and breathes life into alien civilizations.</p>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="bg-gray-700 p-6 rounded-2xl shadow-xl">
+          <img src="https://i.ibb.co/jgZKxKz/avatar3.png" alt="Dev 3" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold">Orion Vega</h3>
+          <p class="text-sm text-gray-300 mb-2">UI/UX Designer</p>
+          <p class="text-gray-400">Ensures the interface looks as good as the stars.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
